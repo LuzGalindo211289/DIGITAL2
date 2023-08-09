@@ -1,0 +1,1023 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"465 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc/pic16f887.h
+[s S16 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S16 . RBIF INTF T0IF RBIE INTE T0IE PEIE GIE ]
+"475
+[s S17 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S17 . . TMR0IF . TMR0IE ]
+"464
+[u S15 `S16 1 `S17 1 ]
+[n S15 . . . ]
+"482
+[v _INTCONbits `VS15 ~T0 @X0 0 e@11 ]
+"4107
+[v _RB0 `Vb ~T0 @X0 0 e@48 ]
+"55 MASTER.c
+[; ;MASTER.c: 55: __bit debounce(void);
+[v _debounce `(b ~T0 @X0 0 ef ]
+"4110 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc/pic16f887.h
+[v _RB1 `Vb ~T0 @X0 0 e@49 ]
+[p mainexit ]
+"54 MASTER.c
+[; ;MASTER.c: 54: void initialize(void);
+[v _initialize `(v ~T0 @X0 0 ef ]
+"25 ./i2c_lib.h
+[; ;./i2c_lib.h: 25: void I2C_Master_Start(void);
+[v _I2C_Master_Start `(v ~T0 @X0 0 ef ]
+"28
+[; ;./i2c_lib.h: 28: void I2C_Master_Write(unsigned d);
+[v _I2C_Master_Write `(v ~T0 @X0 0 ef1`ui ]
+"29
+[; ;./i2c_lib.h: 29: unsigned short I2C_Master_Read(unsigned short a);
+[v _I2C_Master_Read `(us ~T0 @X0 0 ef1`us ]
+"27
+[; ;./i2c_lib.h: 27: void I2C_Master_Stop(void);
+[v _I2C_Master_Stop `(v ~T0 @X0 0 ef ]
+[v F36 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\builtins.h
+[v __delay `JF36 ~T0 @X0 0 e ]
+[p i __delay ]
+"59 MASTER.c
+[; ;MASTER.c: 59: uint8_t adjustValue(uint8_t parameter, uint8_t rtc);
+[v _adjustValue `(uc ~T0 @X0 0 ef2`uc`uc ]
+"60
+[; ;MASTER.c: 60: uint8_t configureValue(uint8_t x, uint8_t y, uint8_t parameter, uint8_t rtc);
+[v _configureValue `(uc ~T0 @X0 0 ef4`uc`uc`uc`uc ]
+"9 ./RTC.h
+[; ;./RTC.h: 9: void writeRTC(unsigned I2C, unsigned d, char parameter);
+[v _writeRTC `(v ~T0 @X0 0 ef3`ui`ui`uc ]
+"10
+[; ;./RTC.h: 10: unsigned short readRTC(unsigned I2C, unsigned d);
+[v _readRTC `(us ~T0 @X0 0 ef2`ui`ui ]
+"24 ./LCD.h
+[; ;./LCD.h: 24: uint8_t CENTENA(unsigned char c);
+[v _CENTENA `(uc ~T0 @X0 0 ef1`uc ]
+"22
+[; ;./LCD.h: 22: uint8_t DECENA(unsigned char c);
+[v _DECENA `(uc ~T0 @X0 0 ef1`uc ]
+"23
+[; ;./LCD.h: 23: uint8_t UNIDAD(unsigned char c);
+[v _UNIDAD `(uc ~T0 @X0 0 ef1`uc ]
+"14
+[; ;./LCD.h: 14: void LCD_CLEAR(void);
+[v _LCD_CLEAR `(v ~T0 @X0 0 ef ]
+"15
+[; ;./LCD.h: 15: void LCD_XY(char x, char y);
+[v _LCD_XY `(v ~T0 @X0 0 ef2`uc`uc ]
+"18
+[; ;./LCD.h: 18: void LCD_STRING(char *a);
+[v _LCD_STRING `(v ~T0 @X0 0 ef1`*uc ]
+"17
+[; ;./LCD.h: 17: void LCD_CHAR(char a);
+[v _LCD_CHAR `(v ~T0 @X0 0 ef1`uc ]
+"57 MASTER.c
+[; ;MASTER.c: 57: void printTimeAndDate(void);
+[v _printTimeAndDate `(v ~T0 @X0 0 ef ]
+"10 ./LCD.h
+[; ;./LCD.h: 10: void OSCILLATOR(uint8_t f);
+[v _OSCILLATOR `(v ~T0 @X0 0 ef1`uc ]
+"3387 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc/pic16f887.h
+[v _ANSEL `Vuc ~T0 @X0 0 e@392 ]
+"3449
+[v _ANSELH `Vuc ~T0 @X0 0 e@393 ]
+"1602
+[v _TRISD `Vuc ~T0 @X0 0 e@136 ]
+"352
+[v _PORTD `Vuc ~T0 @X0 0 e@8 ]
+"1664
+[v _TRISE `Vuc ~T0 @X0 0 e@137 ]
+"414
+[v _PORTE `Vuc ~T0 @X0 0 e@9 ]
+"1478
+[v _TRISB `Vuc ~T0 @X0 0 e@134 ]
+"228
+[v _PORTB `Vuc ~T0 @X0 0 e@6 ]
+"9 ./LCD.h
+[; ;./LCD.h: 9: void IOC_INT(uint8_t a);
+[v _IOC_INT `(v ~T0 @X0 0 ef1`uc ]
+"16
+[; ;./LCD.h: 16: void LCD_INIT(void);
+[v _LCD_INIT `(v ~T0 @X0 0 ef ]
+"23 ./i2c_lib.h
+[; ;./i2c_lib.h: 23: void I2C_Master_Init(const unsigned long c);
+[v _I2C_Master_Init `(v ~T0 @X0 0 ef1`Cul ]
+"64 MASTER.c
+[; ;MASTER.c: 64: uint8_t BCDToDecimal(uint8_t num);
+[v _BCDToDecimal `(uc ~T0 @X0 0 ef1`uc ]
+"1 MASTER.c
+[; ;MASTER.c: 1: 
+[p x FOSC        =  INTRC_NOCLKOUT ]
+"2
+[; ;MASTER.c: 2: 
+[p x WDTE        =  OFF ]
+"3
+[; ;MASTER.c: 3: 
+[p x PWRTE      =  OFF ]
+"4
+[p x MCLRE      =  OFF ]
+"5
+[p x CP            =  OFF ]
+"6
+[p x CPD          =  OFF ]
+"7
+[p x BOREN      =  OFF ]
+"8
+[p x IESO        =  OFF ]
+"9
+[p x FCMEN      =  OFF ]
+"10
+[p x LVP          =  OFF ]
+"12
+[p x BOR4V      =  BOR40V ]
+"13
+[p x WRT          =  OFF ]
+"54 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc/pic16f887.h
+[; <" INDF equ 00h ;# ">
+"61
+[; <" TMR0 equ 01h ;# ">
+"68
+[; <" PCL equ 02h ;# ">
+"75
+[; <" STATUS equ 03h ;# ">
+"161
+[; <" FSR equ 04h ;# ">
+"168
+[; <" PORTA equ 05h ;# ">
+"230
+[; <" PORTB equ 06h ;# ">
+"292
+[; <" PORTC equ 07h ;# ">
+"354
+[; <" PORTD equ 08h ;# ">
+"416
+[; <" PORTE equ 09h ;# ">
+"454
+[; <" PCLATH equ 0Ah ;# ">
+"461
+[; <" INTCON equ 0Bh ;# ">
+"539
+[; <" PIR1 equ 0Ch ;# ">
+"595
+[; <" PIR2 equ 0Dh ;# ">
+"652
+[; <" TMR1 equ 0Eh ;# ">
+"659
+[; <" TMR1L equ 0Eh ;# ">
+"666
+[; <" TMR1H equ 0Fh ;# ">
+"673
+[; <" T1CON equ 010h ;# ">
+"767
+[; <" TMR2 equ 011h ;# ">
+"774
+[; <" T2CON equ 012h ;# ">
+"845
+[; <" SSPBUF equ 013h ;# ">
+"852
+[; <" SSPCON equ 014h ;# ">
+"922
+[; <" CCPR1 equ 015h ;# ">
+"929
+[; <" CCPR1L equ 015h ;# ">
+"936
+[; <" CCPR1H equ 016h ;# ">
+"943
+[; <" CCP1CON equ 017h ;# ">
+"1040
+[; <" RCSTA equ 018h ;# ">
+"1135
+[; <" TXREG equ 019h ;# ">
+"1142
+[; <" RCREG equ 01Ah ;# ">
+"1149
+[; <" CCPR2 equ 01Bh ;# ">
+"1156
+[; <" CCPR2L equ 01Bh ;# ">
+"1163
+[; <" CCPR2H equ 01Ch ;# ">
+"1170
+[; <" CCP2CON equ 01Dh ;# ">
+"1240
+[; <" ADRESH equ 01Eh ;# ">
+"1247
+[; <" ADCON0 equ 01Fh ;# ">
+"1348
+[; <" OPTION_REG equ 081h ;# ">
+"1418
+[; <" TRISA equ 085h ;# ">
+"1480
+[; <" TRISB equ 086h ;# ">
+"1542
+[; <" TRISC equ 087h ;# ">
+"1604
+[; <" TRISD equ 088h ;# ">
+"1666
+[; <" TRISE equ 089h ;# ">
+"1704
+[; <" PIE1 equ 08Ch ;# ">
+"1760
+[; <" PIE2 equ 08Dh ;# ">
+"1817
+[; <" PCON equ 08Eh ;# ">
+"1864
+[; <" OSCCON equ 08Fh ;# ">
+"1929
+[; <" OSCTUNE equ 090h ;# ">
+"1981
+[; <" SSPCON2 equ 091h ;# ">
+"2043
+[; <" PR2 equ 092h ;# ">
+"2050
+[; <" SSPADD equ 093h ;# ">
+"2057
+[; <" SSPMSK equ 093h ;# ">
+"2062
+[; <" MSK equ 093h ;# ">
+"2179
+[; <" SSPSTAT equ 094h ;# ">
+"2348
+[; <" WPUB equ 095h ;# ">
+"2418
+[; <" IOCB equ 096h ;# ">
+"2488
+[; <" VRCON equ 097h ;# ">
+"2558
+[; <" TXSTA equ 098h ;# ">
+"2644
+[; <" SPBRG equ 099h ;# ">
+"2706
+[; <" SPBRGH equ 09Ah ;# ">
+"2776
+[; <" PWM1CON equ 09Bh ;# ">
+"2846
+[; <" ECCPAS equ 09Ch ;# ">
+"2928
+[; <" PSTRCON equ 09Dh ;# ">
+"2972
+[; <" ADRESL equ 09Eh ;# ">
+"2979
+[; <" ADCON1 equ 09Fh ;# ">
+"3013
+[; <" WDTCON equ 0105h ;# ">
+"3066
+[; <" CM1CON0 equ 0107h ;# ">
+"3131
+[; <" CM2CON0 equ 0108h ;# ">
+"3196
+[; <" CM2CON1 equ 0109h ;# ">
+"3247
+[; <" EEDATA equ 010Ch ;# ">
+"3252
+[; <" EEDAT equ 010Ch ;# ">
+"3259
+[; <" EEADR equ 010Dh ;# ">
+"3266
+[; <" EEDATH equ 010Eh ;# ">
+"3273
+[; <" EEADRH equ 010Fh ;# ">
+"3280
+[; <" SRCON equ 0185h ;# ">
+"3337
+[; <" BAUDCTL equ 0187h ;# ">
+"3389
+[; <" ANSEL equ 0188h ;# ">
+"3451
+[; <" ANSELH equ 0189h ;# ">
+"3501
+[; <" EECON1 equ 018Ch ;# ">
+"3546
+[; <" EECON2 equ 018Dh ;# ">
+"38 MASTER.c
+[; ;MASTER.c: 38: uint8_t potentiometer;
+[v _potentiometer `uc ~T0 @X0 1 e ]
+"39
+[; ;MASTER.c: 39: uint8_t unit, ten, hundred;
+[v _unit `uc ~T0 @X0 1 e ]
+[v _ten `uc ~T0 @X0 1 e ]
+[v _hundred `uc ~T0 @X0 1 e ]
+"41
+[; ;MASTER.c: 41: uint8_t seconds, minutes, hours;
+[v _seconds `uc ~T0 @X0 1 e ]
+[v _minutes `uc ~T0 @X0 1 e ]
+[v _hours `uc ~T0 @X0 1 e ]
+"42
+[; ;MASTER.c: 42: uint8_t day, month, year;
+[v _day `uc ~T0 @X0 1 e ]
+[v _month `uc ~T0 @X0 1 e ]
+[v _year `uc ~T0 @X0 1 e ]
+"44
+[; ;MASTER.c: 44: uint8_t menuSelection, menuParameter, temp;
+[v _menuSelection `uc ~T0 @X0 1 e ]
+[v _menuParameter `uc ~T0 @X0 1 e ]
+[v _temp `uc ~T0 @X0 1 e ]
+"47
+[; ;MASTER.c: 47: static char Time[] = "00:00:00";
+[v _Time `uc ~T0 @X0 -> 9 `i s ]
+[i _Time
+:U ..
+-> 48 `c
+-> 48 `c
+-> 58 `c
+-> 48 `c
+-> 48 `c
+-> 58 `c
+-> 48 `c
+-> 48 `c
+-> 0 `c
+..
+]
+"48
+[; ;MASTER.c: 48: static char Date[] = "00/00/2000";
+[v _Date `uc ~T0 @X0 -> 11 `i s ]
+[i _Date
+:U ..
+-> 48 `c
+-> 48 `c
+-> 47 `c
+-> 48 `c
+-> 48 `c
+-> 47 `c
+-> 50 `c
+-> 48 `c
+-> 48 `c
+-> 48 `c
+-> 0 `c
+..
+]
+[v $root$_ISR `(v ~T0 @X0 0 e ]
+"67
+[; ;MASTER.c: 67: void __attribute__((picinterrupt(("")))) ISR(void){
+[v _ISR `(v ~T1 @X0 1 ef ]
+{
+[e :U _ISR ]
+[f ]
+"68
+[; ;MASTER.c: 68:     if (INTCONbits.RBIF == 1){
+[e $ ! == -> . . _INTCONbits 0 0 `i -> 1 `i 139  ]
+{
+"69
+[; ;MASTER.c: 69:         if (RB0 == 0){
+[e $ ! == -> _RB0 `i -> 0 `i 140  ]
+{
+"70
+[; ;MASTER.c: 70:             if(debounce())
+[e $ ! ( _debounce ..  141  ]
+"71
+[; ;MASTER.c: 71:                 menuSelection++;
+[e ++ _menuSelection -> -> 1 `i `uc ]
+[e :U 141 ]
+"72
+[; ;MASTER.c: 72:         } else if (RB1 == 0){
+}
+[e $U 142  ]
+[e :U 140 ]
+[e $ ! == -> _RB1 `i -> 0 `i 143  ]
+{
+"73
+[; ;MASTER.c: 73:             if(menuSelection != 0)
+[e $ ! != -> _menuSelection `i -> 0 `i 144  ]
+"74
+[; ;MASTER.c: 74:                 if(debounce())
+[e $ ! ( _debounce ..  145  ]
+"75
+[; ;MASTER.c: 75:                     menuParameter++;
+[e ++ _menuParameter -> -> 1 `i `uc ]
+[e :U 145 ]
+[e :U 144 ]
+"76
+[; ;MASTER.c: 76:         }
+}
+[e :U 143 ]
+[e :U 142 ]
+"82
+[; ;MASTER.c: 82:         if(menuSelection > 5)
+[e $ ! > -> _menuSelection `i -> 5 `i 146  ]
+"83
+[; ;MASTER.c: 83:             menuSelection = 0;
+[e = _menuSelection -> -> 0 `i `uc ]
+[e :U 146 ]
+"84
+[; ;MASTER.c: 84:         if(menuSelection == 1 && menuParameter > 23)
+[e $ ! && == -> _menuSelection `i -> 1 `i > -> _menuParameter `i -> 23 `i 147  ]
+"85
+[; ;MASTER.c: 85:             menuParameter = 0;
+[e = _menuParameter -> -> 0 `i `uc ]
+[e :U 147 ]
+"86
+[; ;MASTER.c: 86:         if(menuSelection == 2 && menuParameter > 59)
+[e $ ! && == -> _menuSelection `i -> 2 `i > -> _menuParameter `i -> 59 `i 148  ]
+"87
+[; ;MASTER.c: 87:             menuParameter = 0;
+[e = _menuParameter -> -> 0 `i `uc ]
+[e :U 148 ]
+"88
+[; ;MASTER.c: 88:         if(menuSelection == 3 && menuParameter > 12)
+[e $ ! && == -> _menuSelection `i -> 3 `i > -> _menuParameter `i -> 12 `i 149  ]
+"89
+[; ;MASTER.c: 89:             menuParameter = 1;
+[e = _menuParameter -> -> 1 `i `uc ]
+[e :U 149 ]
+"90
+[; ;MASTER.c: 90:         if(menuSelection == 3 && menuParameter == 0)
+[e $ ! && == -> _menuSelection `i -> 3 `i == -> _menuParameter `i -> 0 `i 150  ]
+"91
+[; ;MASTER.c: 91:             menuParameter = 1;
+[e = _menuParameter -> -> 1 `i `uc ]
+[e :U 150 ]
+"92
+[; ;MASTER.c: 92:         if(menuSelection == 4 && menuParameter > 99)
+[e $ ! && == -> _menuSelection `i -> 4 `i > -> _menuParameter `i -> 99 `i 151  ]
+"93
+[; ;MASTER.c: 93:             menuParameter = 0;
+[e = _menuParameter -> -> 0 `i `uc ]
+[e :U 151 ]
+"95
+[; ;MASTER.c: 95:         INTCONbits.RBIF = 0;
+[e = . . _INTCONbits 0 0 -> -> 0 `i `uc ]
+"96
+[; ;MASTER.c: 96:     }
+}
+[e :U 139 ]
+"97
+[; ;MASTER.c: 97: }
+[e :UE 138 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"100
+[; ;MASTER.c: 100: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"101
+[; ;MASTER.c: 101:     initialize();
+[e ( _initialize ..  ]
+"103
+[; ;MASTER.c: 103:     while(1){
+[e :U 154 ]
+{
+"105
+[; ;MASTER.c: 105:         I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"106
+[; ;MASTER.c: 106:         I2C_Master_Write(0x81);
+[e ( _I2C_Master_Write (1 -> -> 129 `i `ui ]
+"107
+[; ;MASTER.c: 107:         potentiometer = I2C_Master_Read(0);
+[e = _potentiometer -> ( _I2C_Master_Read (1 -> -> 0 `i `us `uc ]
+"108
+[; ;MASTER.c: 108:         I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"109
+[; ;MASTER.c: 109:         _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"111
+[; ;MASTER.c: 111:         if(menuSelection != 0){
+[e $ ! != -> _menuSelection `i -> 0 `i 156  ]
+{
+"112
+[; ;MASTER.c: 112:             if(menuSelection == 1){
+[e $ ! == -> _menuSelection `i -> 1 `i 157  ]
+{
+"113
+[; ;MASTER.c: 113:                 menuParameter = adjustValue(menuParameter, hours);
+[e = _menuParameter ( _adjustValue (2 , _menuParameter _hours ]
+"114
+[; ;MASTER.c: 114:                 hours = configureValue(1, 8, menuParameter, hours);
+[e = _hours ( _configureValue (4 , , , -> -> 1 `i `uc -> -> 8 `i `uc _menuParameter _hours ]
+"115
+[; ;MASTER.c: 115:             }
+}
+[e :U 157 ]
+"116
+[; ;MASTER.c: 116:             if(menuSelection == 2){
+[e $ ! == -> _menuSelection `i -> 2 `i 158  ]
+{
+"117
+[; ;MASTER.c: 117:                 menuParameter = adjustValue(menuParameter, minutes);
+[e = _menuParameter ( _adjustValue (2 , _menuParameter _minutes ]
+"118
+[; ;MASTER.c: 118:                 minutes = configureValue(1, 11, menuParameter, minutes);
+[e = _minutes ( _configureValue (4 , , , -> -> 1 `i `uc -> -> 11 `i `uc _menuParameter _minutes ]
+"119
+[; ;MASTER.c: 119:             }
+}
+[e :U 158 ]
+"120
+[; ;MASTER.c: 120:             if(menuSelection == 3){
+[e $ ! == -> _menuSelection `i -> 3 `i 159  ]
+{
+"121
+[; ;MASTER.c: 121:                 menuParameter = adjustValue(menuParameter, month);
+[e = _menuParameter ( _adjustValue (2 , _menuParameter _month ]
+"122
+[; ;MASTER.c: 122:                 month = configureValue(2, 9, menuParameter, month);
+[e = _month ( _configureValue (4 , , , -> -> 2 `i `uc -> -> 9 `i `uc _menuParameter _month ]
+"123
+[; ;MASTER.c: 123:             }
+}
+[e :U 159 ]
+"124
+[; ;MASTER.c: 124:             if(menuSelection == 4){
+[e $ ! == -> _menuSelection `i -> 4 `i 160  ]
+{
+"125
+[; ;MASTER.c: 125:                 menuParameter = adjustValue(menuParameter, year);
+[e = _menuParameter ( _adjustValue (2 , _menuParameter _year ]
+"126
+[; ;MASTER.c: 126:                 year = configureValue(2, 14, menuParameter, year);
+[e = _year ( _configureValue (4 , , , -> -> 2 `i `uc -> -> 14 `i `uc _menuParameter _year ]
+"127
+[; ;MASTER.c: 127:             }
+}
+[e :U 160 ]
+"128
+[; ;MASTER.c: 128:             if(menuSelection == 5){
+[e $ ! == -> _menuSelection `i -> 5 `i 161  ]
+{
+"129
+[; ;MASTER.c: 129:                 writeRTC(0xD0, 0x02, hours);
+[e ( _writeRTC (3 , , -> -> 208 `i `ui -> -> 2 `i `ui -> _hours `uc ]
+"130
+[; ;MASTER.c: 130:                 writeRTC(0xD0, 0x01, minutes);
+[e ( _writeRTC (3 , , -> -> 208 `i `ui -> -> 1 `i `ui -> _minutes `uc ]
+"131
+[; ;MASTER.c: 131:                 writeRTC(0xD0, 0x05, month);
+[e ( _writeRTC (3 , , -> -> 208 `i `ui -> -> 5 `i `ui -> _month `uc ]
+"132
+[; ;MASTER.c: 132:                 writeRTC(0xD0, 0x06, year);
+[e ( _writeRTC (3 , , -> -> 208 `i `ui -> -> 6 `i `ui -> _year `uc ]
+"133
+[; ;MASTER.c: 133:                 writeRTC(0xD0, 0x00, 0x00);
+[e ( _writeRTC (3 , , -> -> 208 `i `ui -> -> 0 `i `ui -> -> 0 `i `uc ]
+"134
+[; ;MASTER.c: 134:                 menuParameter = 0;
+[e = _menuParameter -> -> 0 `i `uc ]
+"135
+[; ;MASTER.c: 135:                 menuSelection = 0;
+[e = _menuSelection -> -> 0 `i `uc ]
+"136
+[; ;MASTER.c: 136:             }
+}
+[e :U 161 ]
+"137
+[; ;MASTER.c: 137:         } else {
+}
+[e $U 162  ]
+[e :U 156 ]
+{
+"138
+[; ;MASTER.c: 138:             seconds = readRTC(0xD0, 0x00);
+[e = _seconds -> ( _readRTC (2 , -> -> 208 `i `ui -> -> 0 `i `ui `uc ]
+"139
+[; ;MASTER.c: 139:             minutes = readRTC(0xD0, 0x01);
+[e = _minutes -> ( _readRTC (2 , -> -> 208 `i `ui -> -> 1 `i `ui `uc ]
+"140
+[; ;MASTER.c: 140:             hours = readRTC(0xD0, 0x02);
+[e = _hours -> ( _readRTC (2 , -> -> 208 `i `ui -> -> 2 `i `ui `uc ]
+"141
+[; ;MASTER.c: 141:             day = readRTC(0xD0, 0x04);
+[e = _day -> ( _readRTC (2 , -> -> 208 `i `ui -> -> 4 `i `ui `uc ]
+"142
+[; ;MASTER.c: 142:             month = readRTC(0xD0, 0x05);
+[e = _month -> ( _readRTC (2 , -> -> 208 `i `ui -> -> 5 `i `ui `uc ]
+"143
+[; ;MASTER.c: 143:             year = readRTC(0xD0, 0x06);
+[e = _year -> ( _readRTC (2 , -> -> 208 `i `ui -> -> 6 `i `ui `uc ]
+"144
+[; ;MASTER.c: 144:         }
+}
+[e :U 162 ]
+"146
+[; ;MASTER.c: 146:         hundred = CENTENA(potentiometer);
+[e = _hundred ( _CENTENA (1 _potentiometer ]
+"147
+[; ;MASTER.c: 147:         ten = DECENA(potentiometer);
+[e = _ten ( _DECENA (1 _potentiometer ]
+"148
+[; ;MASTER.c: 148:         unit = UNIDAD(potentiometer);
+[e = _unit ( _UNIDAD (1 _potentiometer ]
+"150
+[; ;MASTER.c: 150:         hundred += '0';
+[e =+ _hundred -> -> 48 `ui `uc ]
+"151
+[; ;MASTER.c: 151:         ten += '0';
+[e =+ _ten -> -> 48 `ui `uc ]
+"152
+[; ;MASTER.c: 152:         unit += '0';
+[e =+ _unit -> -> 48 `ui `uc ]
+"154
+[; ;MASTER.c: 154:         LCD_CLEAR();
+[e ( _LCD_CLEAR ..  ]
+"155
+[; ;MASTER.c: 155:         LCD_XY(1, 0);
+[e ( _LCD_XY (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
+"156
+[; ;MASTER.c: 156:         LCD_STRING("temp:");
+[e ( _LCD_STRING (1 :s 1C ]
+"157
+[; ;MASTER.c: 157:         LCD_XY(2, 0);
+[e ( _LCD_XY (2 , -> -> 2 `i `uc -> -> 0 `i `uc ]
+"158
+[; ;MASTER.c: 158:         LCD_CHAR(hundred);
+[e ( _LCD_CHAR (1 -> _hundred `uc ]
+"159
+[; ;MASTER.c: 159:         LCD_STRING(".");
+[e ( _LCD_STRING (1 :s 2C ]
+"160
+[; ;MASTER.c: 160:         LCD_CHAR(ten);
+[e ( _LCD_CHAR (1 -> _ten `uc ]
+"161
+[; ;MASTER.c: 161:         LCD_CHAR(unit);
+[e ( _LCD_CHAR (1 -> _unit `uc ]
+"163
+[; ;MASTER.c: 163:         printTimeAndDate();
+[e ( _printTimeAndDate ..  ]
+"164
+[; ;MASTER.c: 164:     }
+}
+[e :U 153 ]
+[e $U 154  ]
+[e :U 155 ]
+"165
+[; ;MASTER.c: 165:     return;
+[e $UE 152  ]
+"166
+[; ;MASTER.c: 166: }
+[e :UE 152 ]
+}
+"169
+[; ;MASTER.c: 169: void initialize(void){
+[v _initialize `(v ~T0 @X0 1 ef ]
+{
+[e :U _initialize ]
+[f ]
+"170
+[; ;MASTER.c: 170:     OSCILLATOR(1);
+[e ( _OSCILLATOR (1 -> -> 1 `i `uc ]
+"172
+[; ;MASTER.c: 172:     ANSEL = 0x00;
+[e = _ANSEL -> -> 0 `i `uc ]
+"173
+[; ;MASTER.c: 173:     ANSELH = 0x00;
+[e = _ANSELH -> -> 0 `i `uc ]
+"175
+[; ;MASTER.c: 175:     TRISD = 0x00;
+[e = _TRISD -> -> 0 `i `uc ]
+"176
+[; ;MASTER.c: 176:     PORTD = 0x00;
+[e = _PORTD -> -> 0 `i `uc ]
+"177
+[; ;MASTER.c: 177:     TRISE = 0x00;
+[e = _TRISE -> -> 0 `i `uc ]
+"178
+[; ;MASTER.c: 178:     PORTE = 0x00;
+[e = _PORTE -> -> 0 `i `uc ]
+"180
+[; ;MASTER.c: 180:     TRISB = 0b00000111;
+[e = _TRISB -> -> 7 `i `uc ]
+"181
+[; ;MASTER.c: 181:     PORTB = 0x00;
+[e = _PORTB -> -> 0 `i `uc ]
+"183
+[; ;MASTER.c: 183:     IOC_INT(0b00000011);
+[e ( _IOC_INT (1 -> -> 3 `i `uc ]
+"185
+[; ;MASTER.c: 185:     potentiometer = 0;
+[e = _potentiometer -> -> 0 `i `uc ]
+"186
+[; ;MASTER.c: 186:     unit = 0;
+[e = _unit -> -> 0 `i `uc ]
+"187
+[; ;MASTER.c: 187:     ten = 0;
+[e = _ten -> -> 0 `i `uc ]
+"188
+[; ;MASTER.c: 188:     hundred = 0;
+[e = _hundred -> -> 0 `i `uc ]
+"190
+[; ;MASTER.c: 190:     seconds = 0;
+[e = _seconds -> -> 0 `i `uc ]
+"191
+[; ;MASTER.c: 191:     minutes = 0;
+[e = _minutes -> -> 0 `i `uc ]
+"192
+[; ;MASTER.c: 192:     hours = 0;
+[e = _hours -> -> 0 `i `uc ]
+"193
+[; ;MASTER.c: 193:     day = 0;
+[e = _day -> -> 0 `i `uc ]
+"194
+[; ;MASTER.c: 194:     month = 0;
+[e = _month -> -> 0 `i `uc ]
+"195
+[; ;MASTER.c: 195:     year = 0;
+[e = _year -> -> 0 `i `uc ]
+"197
+[; ;MASTER.c: 197:     menuSelection = 0;
+[e = _menuSelection -> -> 0 `i `uc ]
+"198
+[; ;MASTER.c: 198:     menuParameter = 0;
+[e = _menuParameter -> -> 0 `i `uc ]
+"200
+[; ;MASTER.c: 200:     LCD_INIT();
+[e ( _LCD_INIT ..  ]
+"201
+[; ;MASTER.c: 201:     I2C_Master_Init(100000);
+[e ( _I2C_Master_Init (1 -> -> 100000 `l `ul ]
+"202
+[; ;MASTER.c: 202: }
+[e :UE 163 ]
+}
+"205
+[; ;MASTER.c: 205: void printTimeAndDate(void){
+[v _printTimeAndDate `(v ~T0 @X0 1 ef ]
+{
+[e :U _printTimeAndDate ]
+[f ]
+"207
+[; ;MASTER.c: 207:     uint8_t seconds1, minutes1, hours1;
+[v _seconds1 `uc ~T0 @X0 1 a ]
+[v _minutes1 `uc ~T0 @X0 1 a ]
+[v _hours1 `uc ~T0 @X0 1 a ]
+"208
+[; ;MASTER.c: 208:     uint8_t day1, month1, year1;
+[v _day1 `uc ~T0 @X0 1 a ]
+[v _month1 `uc ~T0 @X0 1 a ]
+[v _year1 `uc ~T0 @X0 1 a ]
+"209
+[; ;MASTER.c: 209:     seconds1 = BCDToDecimal(seconds);
+[e = _seconds1 ( _BCDToDecimal (1 _seconds ]
+"210
+[; ;MASTER.c: 210:     minutes1 = BCDToDecimal(minutes);
+[e = _minutes1 ( _BCDToDecimal (1 _minutes ]
+"211
+[; ;MASTER.c: 211:     hours1 = BCDToDecimal(hours);
+[e = _hours1 ( _BCDToDecimal (1 _hours ]
+"212
+[; ;MASTER.c: 212:     day1 = BCDToDecimal(day);
+[e = _day1 ( _BCDToDecimal (1 _day ]
+"213
+[; ;MASTER.c: 213:     month1 = BCDToDecimal(month);
+[e = _month1 ( _BCDToDecimal (1 _month ]
+"214
+[; ;MASTER.c: 214:     year1 = BCDToDecimal(year);
+[e = _year1 ( _BCDToDecimal (1 _year ]
+"216
+[; ;MASTER.c: 216:     Time[0] = hours1/10 + '0';
+[e = *U + &U _Time * -> -> -> 0 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> / -> _hours1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"217
+[; ;MASTER.c: 217:     Time[1] = hours1 % 10 + '0';
+[e = *U + &U _Time * -> -> -> 1 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> % -> _hours1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"218
+[; ;MASTER.c: 218:     Time[3] = minutes1 / 10 + '0';
+[e = *U + &U _Time * -> -> -> 3 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> / -> _minutes1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"219
+[; ;MASTER.c: 219:     Time[4] = minutes1 % 10 + '0';
+[e = *U + &U _Time * -> -> -> 4 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> % -> _minutes1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"220
+[; ;MASTER.c: 220:     Time[6] = seconds1/10 + '0';
+[e = *U + &U _Time * -> -> -> 6 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> / -> _seconds1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"221
+[; ;MASTER.c: 221:     Time[7] = seconds1 % 10 + '0';
+[e = *U + &U _Time * -> -> -> 7 `i `ui `ux -> -> # *U &U _Time `ui `ux -> + -> % -> _seconds1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"223
+[; ;MASTER.c: 223:     Date[0] = day1/10 + '0';
+[e = *U + &U _Date * -> -> -> 0 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> / -> _day1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"224
+[; ;MASTER.c: 224:     Date[1] = day1 % 10 + '0';
+[e = *U + &U _Date * -> -> -> 1 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> % -> _day1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"225
+[; ;MASTER.c: 225:     Date[3] = month1/10 + '0';
+[e = *U + &U _Date * -> -> -> 3 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> / -> _month1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"226
+[; ;MASTER.c: 226:     Date[4] = month1 % 10 + '0';
+[e = *U + &U _Date * -> -> -> 4 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> % -> _month1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"227
+[; ;MASTER.c: 227:     Date[8] = year1/10 + '0';
+[e = *U + &U _Date * -> -> -> 8 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> / -> _year1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"228
+[; ;MASTER.c: 228:     Date[9] = year1 % 10 + '0';
+[e = *U + &U _Date * -> -> -> 9 `i `ui `ux -> -> # *U &U _Date `ui `ux -> + -> % -> _year1 `i -> 10 `i `ui -> 48 `ui `uc ]
+"230
+[; ;MASTER.c: 230:     LCD_XY(1, 8);
+[e ( _LCD_XY (2 , -> -> 1 `i `uc -> -> 8 `i `uc ]
+"231
+[; ;MASTER.c: 231:     LCD_STRING(Time);
+[e ( _LCD_STRING (1 &U _Time ]
+"232
+[; ;MASTER.c: 232:     LCD_XY(2, 6);
+[e ( _LCD_XY (2 , -> -> 2 `i `uc -> -> 6 `i `uc ]
+"233
+[; ;MASTER.c: 233:     LCD_STRING(Date);
+[e ( _LCD_STRING (1 &U _Date ]
+"234
+[; ;MASTER.c: 234:     _delay((unsigned long)((100)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"235
+[; ;MASTER.c: 235: }
+[e :UE 164 ]
+}
+"238
+[; ;MASTER.c: 238: void blink(void){
+[v _blink `(v ~T0 @X0 1 ef ]
+{
+[e :U _blink ]
+[f ]
+"239
+[; ;MASTER.c: 239:     uint8_t j = 0;
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+"240
+[; ;MASTER.c: 240:     while(j > 100 && RB0 && RB1){
+[e $U 166  ]
+[e :U 167 ]
+{
+"241
+[; ;MASTER.c: 241:         j++;
+[e ++ _j -> -> 1 `i `uc ]
+"242
+[; ;MASTER.c: 242:         _delay((unsigned long)((5)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"243
+[; ;MASTER.c: 243:     }
+}
+[e :U 166 ]
+"240
+[; ;MASTER.c: 240:     while(j > 100 && RB0 && RB1){
+[e $ && && > -> _j `i -> 100 `i _RB0 _RB1 167  ]
+[e :U 168 ]
+"244
+[; ;MASTER.c: 244: }
+[e :UE 165 ]
+}
+"246
+[; ;MASTER.c: 246: uint8_t decimalToBCD(uint8_t num){
+[v _decimalToBCD `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _decimalToBCD ]
+[v _num `uc ~T0 @X0 1 r1 ]
+[f ]
+"247
+[; ;MASTER.c: 247:     uint8_t tens = num / 10;
+[v _tens `uc ~T0 @X0 1 a ]
+[e = _tens -> / -> _num `i -> 10 `i `uc ]
+"248
+[; ;MASTER.c: 248:     uint8_t ones = num % 10;
+[v _ones `uc ~T0 @X0 1 a ]
+[e = _ones -> % -> _num `i -> 10 `i `uc ]
+"250
+[; ;MASTER.c: 250:     return (tens << 4) | ones;
+[e ) -> | << -> _tens `i -> 4 `i -> _ones `i `uc ]
+[e $UE 169  ]
+"251
+[; ;MASTER.c: 251: }
+[e :UE 169 ]
+}
+"255
+[; ;MASTER.c: 255: uint8_t BCDToDecimal(uint8_t num){
+[v _BCDToDecimal `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _BCDToDecimal ]
+[v _num `uc ~T0 @X0 1 r1 ]
+[f ]
+"256
+[; ;MASTER.c: 256:     uint8_t tens = (num >> 4) & 0x0F;
+[v _tens `uc ~T0 @X0 1 a ]
+[e = _tens -> & >> -> _num `i -> 4 `i -> 15 `i `uc ]
+"257
+[; ;MASTER.c: 257:     uint8_t ones = num & 0x0F;
+[v _ones `uc ~T0 @X0 1 a ]
+[e = _ones -> & -> _num `i -> 15 `i `uc ]
+"259
+[; ;MASTER.c: 259:     return tens * 10 + ones;
+[e ) -> + * -> _tens `i -> 10 `i -> _ones `i `uc ]
+[e $UE 170  ]
+"260
+[; ;MASTER.c: 260: }
+[e :UE 170 ]
+}
+"265
+[; ;MASTER.c: 265: uint8_t adjustValue(uint8_t parameter, uint8_t rtc){
+[v _adjustValue `(uc ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _adjustValue ]
+[v _parameter `uc ~T0 @X0 1 r1 ]
+[v _rtc `uc ~T0 @X0 1 r2 ]
+[f ]
+"266
+[; ;MASTER.c: 266:     if(!RB0){
+[e $ ! ! _RB0 172  ]
+{
+"267
+[; ;MASTER.c: 267:         if(debounce())
+[e $ ! ( _debounce ..  173  ]
+"268
+[; ;MASTER.c: 268:             parameter = BCDToDecimal(rtc);
+[e = _parameter ( _BCDToDecimal (1 _rtc ]
+[e :U 173 ]
+"269
+[; ;MASTER.c: 269:     }
+}
+[e :U 172 ]
+"276
+[; ;MASTER.c: 276:     return parameter;
+[e ) _parameter ]
+[e $UE 171  ]
+"278
+[; ;MASTER.c: 278: }
+[e :UE 171 ]
+}
+"281
+[; ;MASTER.c: 281: uint8_t configureValue(uint8_t x, uint8_t y, uint8_t parameter, uint8_t rtc){
+[v _configureValue `(uc ~T0 @X0 1 ef4`uc`uc`uc`uc ]
+{
+[e :U _configureValue ]
+[v _x `uc ~T0 @X0 1 r1 ]
+[v _y `uc ~T0 @X0 1 r2 ]
+[v _parameter `uc ~T0 @X0 1 r3 ]
+[v _rtc `uc ~T0 @X0 1 r4 ]
+[f ]
+"282
+[; ;MASTER.c: 282:     rtc = decimalToBCD(parameter);
+[e = _rtc ( _decimalToBCD (1 _parameter ]
+"284
+[; ;MASTER.c: 284:     LCD_XY(x, y);
+[e ( _LCD_XY (2 , -> _x `uc -> _y `uc ]
+"285
+[; ;MASTER.c: 285:     blink();
+[e ( _blink ..  ]
+"286
+[; ;MASTER.c: 286:     LCD_STRING("  ");
+[e ( _LCD_STRING (1 :s 3C ]
+"287
+[; ;MASTER.c: 287:     blink();
+[e ( _blink ..  ]
+"288
+[; ;MASTER.c: 288:     return rtc;
+[e ) _rtc ]
+[e $UE 174  ]
+"289
+[; ;MASTER.c: 289: }
+[e :UE 174 ]
+}
+"292
+[; ;MASTER.c: 292: __bit debounce(void){
+[v _debounce `(b ~T0 @X0 1 ef ]
+{
+[e :U _debounce ]
+[f ]
+"293
+[; ;MASTER.c: 293:     uint8_t counter = 0;
+[v _counter `uc ~T0 @X0 1 a ]
+[e = _counter -> -> 0 `i `uc ]
+"294
+[; ;MASTER.c: 294:     for(uint8_t i = 0; i < 5; i++){
+{
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 5 `i 176  ]
+[e $U 177  ]
+[e :U 176 ]
+{
+"295
+[; ;MASTER.c: 295:         if(!RB0 || !RB1)
+[e $ ! || ! _RB0 ! _RB1 179  ]
+"296
+[; ;MASTER.c: 296:             counter++;
+[e ++ _counter -> -> 1 `i `uc ]
+[e :U 179 ]
+"297
+[; ;MASTER.c: 297:         _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"298
+[; ;MASTER.c: 298:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 5 `i 176  ]
+[e :U 177 ]
+}
+"299
+[; ;MASTER.c: 299:     if(counter > 2)
+[e $ ! > -> _counter `i -> 2 `i 180  ]
+"300
+[; ;MASTER.c: 300:         return 1;
+[e ) -> -> 1 `i `b ]
+[e $UE 175  ]
+[e $U 181  ]
+"301
+[; ;MASTER.c: 301:     else
+[e :U 180 ]
+"302
+[; ;MASTER.c: 302:         return 0;
+[e ) -> -> 0 `i `b ]
+[e $UE 175  ]
+[e :U 181 ]
+"303
+[; ;MASTER.c: 303: }
+[e :UE 175 ]
+}
+[a 1C 116 101 109 112 58 0 ]
+[a 2C 46 0 ]
+[a 3C 32 32 0 ]

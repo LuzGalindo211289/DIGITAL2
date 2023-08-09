@@ -1,0 +1,358 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"850 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc/pic16f887.h
+[v _SSPCON `Vuc ~T0 @X0 0 e@20 ]
+"1979
+[v _SSPCON2 `Vuc ~T0 @X0 0 e@145 ]
+"2048
+[v _SSPADD `Vuc ~T0 @X0 0 e@147 ]
+"2177
+[v _SSPSTAT `Vuc ~T0 @X0 0 e@148 ]
+"1546
+[s S57 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S57 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
+"1545
+[u S56 `S57 1 ]
+[n S56 . . ]
+"1557
+[v _TRISCbits `VS56 ~T0 @X0 0 e@135 ]
+"1985
+[s S76 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S76 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
+"1984
+[u S75 `S76 1 ]
+[n S75 . . ]
+"1996
+[v _SSPCON2bits `VS75 ~T0 @X0 0 e@145 ]
+"843
+[v _SSPBUF `Vuc ~T0 @X0 0 e@19 ]
+"54 C:/Program Files/Microchip/MPLABX/v6.10/packs/Microchip/PIC16Fxxx_DFP/1.4.149/xc8\pic\include\proc/pic16f887.h
+[; <" INDF equ 00h ;# ">
+"61
+[; <" TMR0 equ 01h ;# ">
+"68
+[; <" PCL equ 02h ;# ">
+"75
+[; <" STATUS equ 03h ;# ">
+"161
+[; <" FSR equ 04h ;# ">
+"168
+[; <" PORTA equ 05h ;# ">
+"230
+[; <" PORTB equ 06h ;# ">
+"292
+[; <" PORTC equ 07h ;# ">
+"354
+[; <" PORTD equ 08h ;# ">
+"416
+[; <" PORTE equ 09h ;# ">
+"454
+[; <" PCLATH equ 0Ah ;# ">
+"461
+[; <" INTCON equ 0Bh ;# ">
+"539
+[; <" PIR1 equ 0Ch ;# ">
+"595
+[; <" PIR2 equ 0Dh ;# ">
+"652
+[; <" TMR1 equ 0Eh ;# ">
+"659
+[; <" TMR1L equ 0Eh ;# ">
+"666
+[; <" TMR1H equ 0Fh ;# ">
+"673
+[; <" T1CON equ 010h ;# ">
+"767
+[; <" TMR2 equ 011h ;# ">
+"774
+[; <" T2CON equ 012h ;# ">
+"845
+[; <" SSPBUF equ 013h ;# ">
+"852
+[; <" SSPCON equ 014h ;# ">
+"922
+[; <" CCPR1 equ 015h ;# ">
+"929
+[; <" CCPR1L equ 015h ;# ">
+"936
+[; <" CCPR1H equ 016h ;# ">
+"943
+[; <" CCP1CON equ 017h ;# ">
+"1040
+[; <" RCSTA equ 018h ;# ">
+"1135
+[; <" TXREG equ 019h ;# ">
+"1142
+[; <" RCREG equ 01Ah ;# ">
+"1149
+[; <" CCPR2 equ 01Bh ;# ">
+"1156
+[; <" CCPR2L equ 01Bh ;# ">
+"1163
+[; <" CCPR2H equ 01Ch ;# ">
+"1170
+[; <" CCP2CON equ 01Dh ;# ">
+"1240
+[; <" ADRESH equ 01Eh ;# ">
+"1247
+[; <" ADCON0 equ 01Fh ;# ">
+"1348
+[; <" OPTION_REG equ 081h ;# ">
+"1418
+[; <" TRISA equ 085h ;# ">
+"1480
+[; <" TRISB equ 086h ;# ">
+"1542
+[; <" TRISC equ 087h ;# ">
+"1604
+[; <" TRISD equ 088h ;# ">
+"1666
+[; <" TRISE equ 089h ;# ">
+"1704
+[; <" PIE1 equ 08Ch ;# ">
+"1760
+[; <" PIE2 equ 08Dh ;# ">
+"1817
+[; <" PCON equ 08Eh ;# ">
+"1864
+[; <" OSCCON equ 08Fh ;# ">
+"1929
+[; <" OSCTUNE equ 090h ;# ">
+"1981
+[; <" SSPCON2 equ 091h ;# ">
+"2043
+[; <" PR2 equ 092h ;# ">
+"2050
+[; <" SSPADD equ 093h ;# ">
+"2057
+[; <" SSPMSK equ 093h ;# ">
+"2062
+[; <" MSK equ 093h ;# ">
+"2179
+[; <" SSPSTAT equ 094h ;# ">
+"2348
+[; <" WPUB equ 095h ;# ">
+"2418
+[; <" IOCB equ 096h ;# ">
+"2488
+[; <" VRCON equ 097h ;# ">
+"2558
+[; <" TXSTA equ 098h ;# ">
+"2644
+[; <" SPBRG equ 099h ;# ">
+"2706
+[; <" SPBRGH equ 09Ah ;# ">
+"2776
+[; <" PWM1CON equ 09Bh ;# ">
+"2846
+[; <" ECCPAS equ 09Ch ;# ">
+"2928
+[; <" PSTRCON equ 09Dh ;# ">
+"2972
+[; <" ADRESL equ 09Eh ;# ">
+"2979
+[; <" ADCON1 equ 09Fh ;# ">
+"3013
+[; <" WDTCON equ 0105h ;# ">
+"3066
+[; <" CM1CON0 equ 0107h ;# ">
+"3131
+[; <" CM2CON0 equ 0108h ;# ">
+"3196
+[; <" CM2CON1 equ 0109h ;# ">
+"3247
+[; <" EEDATA equ 010Ch ;# ">
+"3252
+[; <" EEDAT equ 010Ch ;# ">
+"3259
+[; <" EEADR equ 010Dh ;# ">
+"3266
+[; <" EEDATH equ 010Eh ;# ">
+"3273
+[; <" EEADRH equ 010Fh ;# ">
+"3280
+[; <" SRCON equ 0185h ;# ">
+"3337
+[; <" BAUDCTL equ 0187h ;# ">
+"3389
+[; <" ANSEL equ 0188h ;# ">
+"3451
+[; <" ANSELH equ 0189h ;# ">
+"3501
+[; <" EECON1 equ 018Ch ;# ">
+"3546
+[; <" EECON2 equ 018Dh ;# ">
+"17 i2c_lib.c
+[; ;i2c_lib.c: 17: void I2C_Master_Init(const unsigned long c)
+[v _I2C_Master_Init `(v ~T0 @X0 1 ef1`Cul ]
+"18
+[; ;i2c_lib.c: 18: {
+{
+[e :U _I2C_Master_Init ]
+"17
+[; ;i2c_lib.c: 17: void I2C_Master_Init(const unsigned long c)
+[v _c `Cul ~T0 @X0 1 r1 ]
+"18
+[; ;i2c_lib.c: 18: {
+[f ]
+"19
+[; ;i2c_lib.c: 19:     SSPCON = 0b00101000;
+[e = _SSPCON -> -> 40 `i `uc ]
+"20
+[; ;i2c_lib.c: 20:     SSPCON2 = 0;
+[e = _SSPCON2 -> -> 0 `i `uc ]
+"21
+[; ;i2c_lib.c: 21:     SSPADD = (8000000/(4*c))-1;
+[e = _SSPADD -> - / -> -> 8000000 `l `ul * -> -> -> 4 `i `l `ul _c -> -> -> 1 `i `l `ul `uc ]
+"22
+[; ;i2c_lib.c: 22:     SSPSTAT = 0;
+[e = _SSPSTAT -> -> 0 `i `uc ]
+"23
+[; ;i2c_lib.c: 23:     TRISCbits.TRISC3 = 1;
+[e = . . _TRISCbits 0 3 -> -> 1 `i `uc ]
+"24
+[; ;i2c_lib.c: 24:     TRISCbits.TRISC4 = 1;
+[e = . . _TRISCbits 0 4 -> -> 1 `i `uc ]
+"25
+[; ;i2c_lib.c: 25: }
+[e :UE 138 ]
+}
+"27
+[; ;i2c_lib.c: 27: void I2C_Master_Wait()
+[v _I2C_Master_Wait `(v ~T0 @X0 1 ef ]
+"28
+[; ;i2c_lib.c: 28: {
+{
+[e :U _I2C_Master_Wait ]
+[f ]
+"29
+[; ;i2c_lib.c: 29:     while ((SSPSTAT & 0x04) || (SSPCON2 & 0x1F));
+[e $U 140  ]
+[e :U 141 ]
+[e :U 140 ]
+[e $ || != & -> _SSPSTAT `i -> 4 `i -> 0 `i != & -> _SSPCON2 `i -> 31 `i -> 0 `i 141  ]
+[e :U 142 ]
+"30
+[; ;i2c_lib.c: 30: }
+[e :UE 139 ]
+}
+"33
+[; ;i2c_lib.c: 33: void I2C_Master_Start()
+[v _I2C_Master_Start `(v ~T0 @X0 1 ef ]
+"34
+[; ;i2c_lib.c: 34: {
+{
+[e :U _I2C_Master_Start ]
+[f ]
+"35
+[; ;i2c_lib.c: 35:     I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"36
+[; ;i2c_lib.c: 36:     SSPCON2bits.SEN = 1;
+[e = . . _SSPCON2bits 0 0 -> -> 1 `i `uc ]
+"37
+[; ;i2c_lib.c: 37: }
+[e :UE 143 ]
+}
+"47
+[; ;i2c_lib.c: 47: void I2C_Master_Stop()
+[v _I2C_Master_Stop `(v ~T0 @X0 1 ef ]
+"48
+[; ;i2c_lib.c: 48: {
+{
+[e :U _I2C_Master_Stop ]
+[f ]
+"49
+[; ;i2c_lib.c: 49:     I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"50
+[; ;i2c_lib.c: 50:     SSPCON2bits.PEN = 1;
+[e = . . _SSPCON2bits 0 2 -> -> 1 `i `uc ]
+"51
+[; ;i2c_lib.c: 51: }
+[e :UE 144 ]
+}
+"56
+[; ;i2c_lib.c: 56: void I2C_Master_Write(unsigned d)
+[v _I2C_Master_Write `(v ~T0 @X0 1 ef1`ui ]
+"57
+[; ;i2c_lib.c: 57: {
+{
+[e :U _I2C_Master_Write ]
+"56
+[; ;i2c_lib.c: 56: void I2C_Master_Write(unsigned d)
+[v _d `ui ~T0 @X0 1 r1 ]
+"57
+[; ;i2c_lib.c: 57: {
+[f ]
+"58
+[; ;i2c_lib.c: 58:     I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"59
+[; ;i2c_lib.c: 59:     SSPBUF = d;
+[e = _SSPBUF -> _d `uc ]
+"60
+[; ;i2c_lib.c: 60: }
+[e :UE 145 ]
+}
+"64
+[; ;i2c_lib.c: 64: unsigned short I2C_Master_Read(unsigned short a)
+[v _I2C_Master_Read `(us ~T0 @X0 1 ef1`us ]
+"65
+[; ;i2c_lib.c: 65: {
+{
+[e :U _I2C_Master_Read ]
+"64
+[; ;i2c_lib.c: 64: unsigned short I2C_Master_Read(unsigned short a)
+[v _a `us ~T0 @X0 1 r1 ]
+"65
+[; ;i2c_lib.c: 65: {
+[f ]
+"66
+[; ;i2c_lib.c: 66:     unsigned short temp;
+[v _temp `us ~T0 @X0 1 a ]
+"67
+[; ;i2c_lib.c: 67:     I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"68
+[; ;i2c_lib.c: 68:     SSPCON2bits.RCEN = 1;
+[e = . . _SSPCON2bits 0 3 -> -> 1 `i `uc ]
+"69
+[; ;i2c_lib.c: 69:     I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"70
+[; ;i2c_lib.c: 70:     temp = SSPBUF;
+[e = _temp -> _SSPBUF `us ]
+"71
+[; ;i2c_lib.c: 71:     I2C_Master_Wait();
+[e ( _I2C_Master_Wait ..  ]
+"72
+[; ;i2c_lib.c: 72:     if(a == 1){
+[e $ ! == -> _a `ui -> -> 1 `i `ui 147  ]
+{
+"73
+[; ;i2c_lib.c: 73:         SSPCON2bits.ACKDT = 0;
+[e = . . _SSPCON2bits 0 5 -> -> 0 `i `uc ]
+"74
+[; ;i2c_lib.c: 74:     }else{
+}
+[e $U 148  ]
+[e :U 147 ]
+{
+"75
+[; ;i2c_lib.c: 75:         SSPCON2bits.ACKDT = 1;
+[e = . . _SSPCON2bits 0 5 -> -> 1 `i `uc ]
+"76
+[; ;i2c_lib.c: 76:     }
+}
+[e :U 148 ]
+"77
+[; ;i2c_lib.c: 77:     SSPCON2bits.ACKEN = 1;
+[e = . . _SSPCON2bits 0 4 -> -> 1 `i `uc ]
+"78
+[; ;i2c_lib.c: 78:     return temp;
+[e ) _temp ]
+[e $UE 146  ]
+"79
+[; ;i2c_lib.c: 79: }
+[e :UE 146 ]
+}
